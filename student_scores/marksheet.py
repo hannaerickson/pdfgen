@@ -1,7 +1,7 @@
 from reportlab.pdfgen import canvas # blank screen
 from reportlab.lib.units import inch
 from reportlab.lib.pagesizes import letter, A4
-from temp_marksheet import my_temp # import the template
+from student_scores.temp_marksheet import my_temp # import the template
 import os
 
 my_path = os.path.expanduser('~/Documents/my-marksheet.pdf') # where the file goes
