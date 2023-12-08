@@ -3,6 +3,8 @@ from reportlab.lib.units import inch
 from reportlab.lib.pagesizes import letter, A4
 import os
 
+# you'll need to install reportlab to try this locally. besides that, the only issue you may run into is with the logo image that is referenced in this file. I will comment it out but you can import any image and use it if you want.
+
 # when we want to use a template, where pretty much everything stays the same but we just edit some lines, follow below:
 # from template import my_template
 # c=my_template(c) # this runs the template
@@ -23,7 +25,7 @@ c.setFont('Helvetica', 20)
 c.drawString(200, 200, 'Hello world')
 
 # c.rotate(10) # rotate effect, seems to only adjust what comes below
-c.drawImage('logo.jpg', -0.7*inch, 8.7*inch, 2*inch, 1*inch) # image, then x and y coordinates, then width and height
+# c.drawImage('logo.jpg', -0.7*inch, 8.7*inch, 2*inch, 1*inch) # image, then x and y coordinates, then width and height
 
 c.setLineWidth(10) # border of rectangle
 c.setStrokeColor('yellow') # border of rectangle
